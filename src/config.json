@@ -1,0 +1,32 @@
+{
+    "chans": [
+        "##ProfSnoo"
+    ],
+    "divert": {},
+    "flood_delay": 3000000,
+    "flood_limit": 3000000,
+    "ident": "ProfSnoo",
+    "realname" : "Professor Snoo",
+    "ignore": [],
+    "ipv6": false,
+    "log": "##classlog",
+    "nick": "ProfSnoo",
+    "oper": false,
+    "oper_name": "",
+    "oper_pass": "",
+    "pass": "TCvxwbCex67)qf&",
+    "perms": {
+        "admin": [
+            "*!*@snoonet/admin/Evan"
+        ],
+        "staff": [
+            "*!*@snoonet/"
+        ]
+    },
+    "port": 6697,
+    "prefix": "~",
+    "server": "irc.snoonet.org",
+    "ssl": true,
+    "timeout": 60,
+    "course_dir" : "../data/"
+}

@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<course name="IRC Basics" description="Using IRC for beginners.">
+    <irc>MODE #channel +mN</irc>
+    <subject name="WELCOME">
+        <topic name="Staff Introductions">
+            <objective>Staff members conducting the course will introduce themselves and their roles on Snoonet</objective>
+        </topic>
+        <topic name="Course Format">
+            <objective>The basic structure of the course, how it's divided up, hierarchy of contents</objective>
+        </topic>
+        <topic name="Rules and Conduct">
+            <objective>Muted channel, asking questions, acceptable topics to discuss</objective>
+        </topic>
+        <topic name="Important Terminology">
+            <objective>The basic terms and definition used on IRC required to understand the course content</objective>
+        </topic>
+        <topic name="Requesting Assistance During Class">
+            <objective>PM a staff member if you need assistance</objective>
+        </topic>
+    </subject>
+    <irc>MODE #channel -m</irc>
+    <notice>The question and answer session is now open.</notice>
+    <bot>pause</bot>
+    <irc>MODE #channel +m</irc>
+    <subject name="NICKS, CHANNELS, AND QUERIES">
+        <topic name="Changing Your Nick">
+            <objective>Using the /nick command, being Snoo'd</objective>
+        </topic>
+        <topic name="The Channel List">
+            <objective><cmd>/list</cmd></objective>
+            <objective><cmd>/cs list <u>search</u></cmd></objective>
+        </topic>
+        <topic name="Community Directory">
+            <objective>Link to communities page</objective>
+        </topic>
+        <topic name="Joins, Parts, and Quits">
+            <objective><cmd>/join <u>#channel</u> [<u>key</u>]</cmd></objective>
+            <objective><cmd>/part <u>#channel</u> [<u>reason</u>]</cmd></objective>
+            <objective>Leaving the network</objective>
+        </topic>
+        <topic name="Ops, Halfops, and Voiced Users">
+            <objective>@</objective>
+            <objective>%</objective>
+            <objective>+</objective>
+        </topic>
+        <topic name="Topics">
+            <objective>The channel topic, various information contained within</objective>
+        </topic>
+        <topic name="Channel Rules">
+            <objective>Where to find</objective>
+            <objective>Advisement to abide by</objective>
+            <objective>Clarifying with ops</objective>
+        </topic>
+        <topic name="Messaging Users">
+            <objective>/query user</objective>
+        </topic>
+        <topic name="WHOIS and the User Format">
+            <objective><cmd>/whois <u>nick</u></cmd></objective>
+            <objective>nick!ident@host</objective>
+            <objective>GECOS</objective>
+        </topic>
+        <topic name="Ignoring and Unignoring User">
+            <objective><cmd>/ignore <u>nick</u></cmd></objective>
+            <objective><cmd>/unignore <u>nick!ident@host</u></cmd></objective>
+        </topic>
+    </subject>
+    <irc>MODE #channel -m</irc>
+    <notice>The question and answer session is now open.</notice>
+    <bot>pause</bot>
+    <irc>MODE #channel +m</irc>
+    <subject name="USER ACCOUNTS">
+        <topic name="Security and Privacy">
+            <objective>IPs hidden</objective>
+            <objective>Channels hidden</objective>
+            <objective>vHosts</objective>
+        </topic>
+        <topic name="Registering Your Nickname">
+            <objective><cmd>/ns register <u>password</u> <u>email</u></cmd></objective>
+            <objective><cmd>/ns verify <u>code</u></cmd></objective>
+            <irc>>MODE #channel -mN</irc>
+            <bot>ping</bot>
+            <notice>Please register your nick at this time.</notice>
+            <bot>pause</bot>
+            <irc>MODE #channel +mN</irc>
+        </topic>
+        <topic name="Logging In and Out">
+            <objective><cmd>/ns identify username password</cmd></objective>
+            <objective><cmd>/ns logout</cmd></objective>
+        </topic>
+        <topic name="Grouping and Ungrouping Nicks">
+            <objective>Must be identified</objective>
+            <objective><cmd>/nick newnick</cmd></objective>
+            <objective>/<cmd>/ns group</cmd></objective>
+            <objective><cmd>/ns ungroup <u>oldnick</u></cmd></objective>
+        </topic>
+        <topic name="The AJOIN List">
+            <objective><cmd>/ns ajoin add <u>#channel</u> [<u>key</u>]</cmd></objective>
+            <objective><cmd>/ns ajoin list</cmd></objective>
+            <objective><cmd>/ns ajoin del <u>#channel</u></cmd></objective>
+        </topic>
+        <topic name="Recovering Your Nick">
+            <objective>/ns recover <u>nickname</u> [<u>password</u>]</objective>
+        </topic>
+        <topic name="Changing and Resetting Your Password">
+            <objective><cmd>/ns set <u>password</u></cmd></objective>
+            <objective><cmd>/ns resetpass <u>username</u> <u>email</u></cmd></objective>
+        </topic>
+        <topic name="Deleting Your Account">
+            <objective><cmd>/ns drop nickname</cmd> for all grouped nicks</objective>
+        </topic>
+    </subject>
+    <irc>MODE #channel -m</irc>
+    <notice>The question and answer session is now open.</notice>
+    <bot>pause</bot>
+    <irc>MODE #channel +m</irc>
+    <subject name="MODES">
+        <topic name="User Modes">
+            <objective>+i</objective>
+            <objective>+I</objective>
+            <objective>+w</objective>
+            <objective>+R / +g</objective>
+        </topic>
+        <topic name="Channel Modes">
+            <objective>+M / +R</objective>
+            <objective>+i</objective>
+            <objective>+p / +s</objective>
+            <objective>+H</objective>
+        </topic>
+    </subject>
+    <irc>MODE #channel -m</irc>
+    <notice>The question and answer session is now open.</notice>
+    <bot>pause</bot>
+    <irc>MODE #channel +m</irc>
+    <subject name="SENDING AND RECEIVING MEMOS">
+        <topic name="Sending a Memo">
+            <objective><cmd>/ms send <u>nick</u> <u>message</u></cmd></objective>
+        </topic>
+        <topic name="Getting a List of Memos">
+            <objective><cmd>/ms list</cmd></objective>
+        </topic>
+        <topic name="Reading a Memo">
+            <objective><cmd>/ms read <u>#</u></cmd></objective>
+        </topic>
+        <topic name="Deleting a Memo">
+            <objective><cmd>/ms del <u>#</u></cmd></objective>
+        </topic>
+    </subject>
+    <irc>MODE #channel -m</irc>
+    <notice>The question and answer session is now open.</notice>
+    <bot>pause</bot>
+    <irc>MODE #channel +m</irc>
+    <subject name="BOTS">
+        <topic name="gonzobot">
+            <objective>.tell nick message</objective>
+        </topic>
+        <topic name="SubWatch">
+            <objective>$add Awwducational</objective>
+        </topic>
+    </subject>
+    <irc>MODE #channel -m</irc>
+    <notice>The question and answer session is now open.</notice>
+    <bot>pause</bot>
+    <irc>MODE #channel +m</irc>
+    <subject name="CONNECTING TO THE NETWORK">
+        <topic name="Webchat"></topic>
+        <topic name="Desktop and Mobile Clients"></topic>
+        <topic name="BNC"></topic>
+        <topic name="Netsplits"></topic>
+    </subject>
+    <irc>MODE #channel -m</irc>
+    <notice>The question and answer session is now open.</notice>
+    <bot>pause</bot>
+    <irc>MODE #channel +m</irc>
+    <subject name="NETWORK RULES"></subject>
+    <irc>MODE #channel -m</irc>
+    <notice>The question and answer session is now open.</notice>
+    <bot>pause</bot>
+    <irc>MODE #channel +m</irc>
+    <subject name="GETTING HELP">
+        <topic name="Staff, Ops, and Half-ops"></topic>
+        <topic name="The Help Channel"></topic>
+        <topic name="Tech Support"></topic>
+        <topic name="Support Tickets"></topic>
+    </subject>
+    <irc>MODE #channel -m</irc>
+    <notice>The question and answer session is now open.</notice>
+    <bot>pause</bot>
+    <irc>MODE #channel +m</irc>
+    <subject name="COURSE COMPLETION">
+        <topic name="Future Courses"></topic>
+        <topic name="Getting More Involved"></topic>
+        <topic name="Thank You"></topic>
+    </subject>
+    <irc>MODE #channel -mN</irc>
+    <notice>The question and answer session is now open.</notice>
+</course>

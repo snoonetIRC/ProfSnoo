@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<course name="IRC Basics" description="Using IRC for beginners.">
+    <irc>MODE #classchan +mND</irc>
+    <objective><cmd>/join <req>#channel</req> <opt>key</opt></cmd></objective>
+    <subject name="WELCOME TO THE TEST">
+        <topic name="Staff Introductions">
+            <objective>We will begin by introducing your profesors for this course.</objective>
+            <notice>Staff members (@profs) conducting the course will now introduce themselves and their roles on Snoonet</notice>
+            <bot>pause</bot>
+        </topic>
+        <topic name="Course Format">
+            <objective>The basic structure of the course, how it's divided up, hierarchy of contents</objective>
+        </topic>
+    </subject>
+    <irc>MODE #classchan -m</irc>
+    <notice>The question and answer session is now open.</notice>
+    <bot>ping</bot>
+    <bot>pause</bot>
+    <irc>MODE #classchan +m</irc>
+    <subject name="USER ACCOUNTS">
+        <topic name="Security and Privacy">
+            <objective>IPs hidden</objective>
+            <objective>Channels hidden</objective>
+            <objective>vHosts</objective>
+        </topic>
+        <topic name="Registering Your Nickname">
+            <objective><cmd>/ns register <req>password</req> <req>email</req></cmd></objective>
+            <objective><cmd>/ns verify <req>code</req></cmd></objective>
+            <irc>MODE #classchan -mN</irc>
+            <bot>ping</bot>
+            <notice>Please register your nick at this time.</notice>
+            <bot>pause</bot>
+            <irc>MODE #classchan +mN</irc>
+            <objective>Thank you for registering your nickname. That concludes this part of the course.</objective>
+        </topic>
+    </subject>
+    <irc>MODE #classchan -m</irc>
+    <notice>The question and answer session is now open.</notice>
+    <bot>ping</bot>
+    <bot>pause</bot>
+    <irc>MODE #classchan +m</irc>
+    <subject name="End">
+        <topic name="Thank You">
+            <objective>Thank you for taking the Snoonet IRC Basics course!</objective>
+            <objective>For further assistance, please see #help and feel free to join your first channel</objective>
+            <objective><cmd>/join <req>#channel</req> <opt>key</opt></cmd></objective>
+        </topic>
+    </subject>
+    <notice>The course is now complete. Question and answers are now open.</notice>
+    <irc>MODE #classchan -mND</irc>
+</course>
